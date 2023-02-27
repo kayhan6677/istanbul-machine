@@ -445,6 +445,47 @@ color: #ffa902;
     margin-top: 0;
 }
 
-#we_manufacture_slide_text {
+#custom_parts_manufacturing_container {
+    height: 148.6px;
+    background-color: white;
+    margin-top: 15px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 6%), 35px 35px 30px #d8dadb;
+    z-index: 1;
     
+}
+
+#custom_parts_manufacturing_header {
+    height: 48.6px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48.6px;
+    background-color: #F9F9F9;
+    padding-left: 20px;
+    border: 1px solid #eee;
+    margin-top: 0;
+    position: relative;
+}
+
+#custom_parts_manufacturing_header a {
+    color: #e74c3c;
+    text-decoration: none; 
+}
+
+#custom_parts_manufacturing_header #lower_than {
+    margin-top: 13px;
+    margin-right: 15px;
+}
+
+#custom_parts_manufacturing_header #greater_than {
+    margin-top: 13px;
+    margin-right: 15px;
+}
+
+#custom_parts_manufacturing_container_inner {
+    display: flex;   
+}
+
+#custom_parts_manufacturing_container_inner a {
+    border: 1px solid;
 }
