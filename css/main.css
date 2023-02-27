@@ -12,13 +12,13 @@ body {
 #main_and_left_side_container {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: auto;
 }
 
 #main_container {
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     left: 0;
     background-color: #f0f2f3;
     position: absolute;
@@ -29,8 +29,7 @@ body {
     position: absolute;
     left: -50%;
     width: 50%;
-    height: 100%;
-    border: 1px solid;
+    height: auto;
     background-color: #2c2c2c;
     transition: left 0.4s;
 }
@@ -41,7 +40,7 @@ body {
 
 #nav_bar {
     position: static;
-    height: 100%;
+    height: auto;
 }
 
 h1 {
@@ -175,7 +174,7 @@ color: #ffa902;
     display: flex;
     flex-direction: column;
     padding: 10px 10px 0 10px;
-    height: 910px;
+    height: 908px;
     background: #262626;
     gap: 6px;
 
@@ -244,6 +243,8 @@ color: #ffa902;
     bottom: 10px;
     opacity: 0;
     transition: opacity 0.3s;
+    cursor: pointer;
+    user-select: none;
 }
 
 @keyframes getin {
@@ -266,12 +267,12 @@ color: #ffa902;
     background-color: white;
 }
 
-#aboutus_box a {
+#aboutus_box a, #lead-sub-title a, .slide_divs #bottom_link a {
     color: #e74c3c;
     text-decoration: none;
 }
 
-#aboutus_we_manufacture_container {
+#aboutus_we_manufacture_container, #aboutus_box {
     margin-top: 15px;
     box-shadow: 0 0 0 1px rgb(0 0 0 / 6%), 35px 35px 30px #d8dadb;
 }
@@ -282,13 +283,168 @@ color: #ffa902;
     padding: 0;
 }
 
-#aboutus_box_text span {
+#aboutus_box_text span, .slide_divs #bottom_link a {
     display: inline-block;
     font-size: 12px;
     font-weight: 400;
     border-top-color: rgb(221, 221, 221);
     border-top-style: solid;
-    border-top-width: 1.25px;
-    margin-top: 25px;
-   
+    border-top-width: 2px;
+    margin-top: 25px; 
+}
+
+#aboutus_box_text span a:hover, .slide_divs #bottom_link a:hover {
+    color: #ddd;
+}
+
+#we_manufacture_box {
+    height: 379px;
+    background-color: white;
+    margin-top: 15px;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 6%), 35px 35px 30px #d8dadb;
+    z-index: 1;
+    padding: 20px;
+    text-align: left;
+    color: rgb(52,64,78);
+}
+
+#we_manufacture_box h2 {
+    margin-top: 0;
+}
+
+#we_manufacture_title{
+    font-size: 23px;
+    font-weight: 400;
+    display: block;
+}
+
+#lead-sub-title {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#we_manufacture_box h2 {
+    position: relative;
+}
+
+#lower_than, #greater_than {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(192, 192, 192);
+    width: 25px;
+    height: 25px; 
+    line-height: 22px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    user-select: none;
+}
+
+#lower_than {
+    right: 26px; 
+    transition: background-color, 0.5s; 
+}
+
+#greater_than {
+    right: 0px;
+    transition: background-color, 0.5s;
+}
+
+#lower_than_text, #greater_than_text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#lower_than:hover, #greater_than:hover {
+    background-color: #e74c3c;
+}
+
+#lower_than:hover > #lower_than_text {
+    animation-name: slide_button_lower;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in; 
+}
+
+#greater_than:hover > #greater_than_text {
+    animation-name: slide_button_greater;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slide_button_lower {
+    from {right: 8px; opacity: 0;}
+    to {right: 8px; opacity: 1;}
+}
+
+@keyframes slide_button_greater {
+    from {right: 8px; opacity: 0;}
+    to {right: 8px; opacity: 1;}
+}
+
+#we_manufacture_slide_container {
+    height: 270px;
+    margin-top: 40px;
+    overflow: hidden;  
+}
+
+#we_manufacture_slide_container_inner {
+    display: flex;
+    flex-direction: row; 
+}
+
+.slide_divs {
+   width: 241.5px;
+   height: 270px;
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: left;
+ }
+
+.slide_divs  * {
+    display: block; 
+}
+
+.slide_divs img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
+
+.slide_divs_top>:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    height: 35px;
+    text-decoration: none;
+    color: rgb(52,64,78);
+    line-height: 35px;
+    margin-left: 20px;
+}
+
+.slide_divs_top>:nth-child(3) {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: none;
+    color: rgb(52,64,78);
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.slide_divs #bottom_link {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.slide_divs #bottom_link a {
+    line-height: 26px;
+    margin-top: 0;
+}
+
+#we_manufacture_slide_text {
+    
 }

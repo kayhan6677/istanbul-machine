@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
@@ -144,10 +144,66 @@
                         We have the power of three family manufacturing businesses each specialized in a different expertise:
                         <a href="machining.html"> machining</a>, <a href="molding.html"> molding</a>, and <a href="coating.html"> coating</a>. We believe in continuous development of our services and 
                         manufacturing abilities to make our customers competitive in their industry. <br>
-                        <span><a href="about.html"> MORE ABOUT ISTANBUL MACHINE</a></span>
+                        <span id="bottom_link"><a href="about.html"> MORE ABOUT ISTANBUL MACHINE</a></span>
                     </div>
                 </div>
-                <div id="we_manufacture_box"></div>
+                <div id="we_manufacture_box">
+                    <h2>
+                        <span id="we_manufacture_title" onmouseenter="(slide())">WE MANUFACTURE</span>
+                        <span id="lead-sub-title">
+                            We manufacture many 
+                            <a href="/machining.html">custom machine parts</a> 
+                            for local factories. We specialize in 
+                            <a href="/coating.html">wear resistance</a> 
+                            products by <a href="/coating.html">coating</a>, 
+                            <a href="/machining.html">machining</a> and 
+                            <a href="/molding.html">molding</a> 
+                            machine and metal parts. 
+                        </span>
+                        <div id="greater_than">
+                           <span id="greater_than_text">&#8250</span>
+                        </div>
+                        <div id="lower_than">
+                            <span id="lower_than_text">&#8249</span>
+                        </div>
+                    </h2>
+                    <div id="we_manufacture_slide_container">
+                        <div id="we_manufacture_slide_container_inner">
+                            <div id="we_manufacture_lpg" class="slide_divs">
+                                <div class="slide_divs_top">
+                                    <img src="img/cng-lpg-cylinder-mold-manufacturing-home.jpg" alt="LPG Cylinder Mold">
+                                    <a href="a.html">LPG Cylinder Mold</a>
+                                    <span id="we_manufacture_slide_text">Cylinder body forming mold</span> 
+                                </div>
+                                <span id="bottom_link"><a href="about.html">CNG&LPG CYLINDER MOLD</a></span>
+                            </div>
+                            <div id="we_manufacture_socket" class="slide_divs">
+                                <div class="slide_divs_top">
+                                    <img src="img/socket-for-kocks-home.jpg" alt="Sockets for Knocks">
+                                    <a href="a.html">Sockets for Knocks</a>
+                                    <span>Sockets for knocks hydro-test machines</span>
+                                </div> 
+                                <span id="bottom_link"><a href="about.html">SOCKETS FOR KNOCKS</a></span>
+                            </div>
+                            <div id="we_manufacture_caps" class="slide_divs">
+                                <div class="slide_divs_top">
+                                    <img src="img/steel-pipe-end-cap-home.jpg" alt="Caps">
+                                    <a href="a.html">Caps</a>
+                                    <span>Butt weld pipe caps</span> 
+                                </div>
+                                <span id="bottom_link"><a href="about.html">CAPS</a></span>
+                            </div>
+                            <div id="we_manufacture_anchor" class="slide_divs">
+                                <div class="slide_divs_top">  
+                                    <img src="img/anchor-for-drywall-home.jpg" alt="Anchor for Drywall">
+                                    <a href="a.html">Anchor for Drywall</a>
+                                    <span>Anchor for plastic board wall</span> 
+                                </div>
+                                <span id="bottom_link"><a href="about.html">ANCHOR</a></span>
+                            </div>           
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="custom_parts_manufacturing_box"></div>
             <div id="footer"></div>
@@ -155,6 +211,8 @@
     </div><!-- main_and_left_side_container -->
     <script src="js/side_navbar.js"></script>
     <script src="js/mini_box_hover.js"></script>
+    <script src="js/slide_show.js"></script>
+    <script src="js/mini_nav_arrows.js"></script>
 </body>
 
 
